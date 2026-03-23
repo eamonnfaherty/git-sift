@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "git-sift"
+version = "0.1.0"
+description = "Interactive wizard for reviewing AI-generated code changes by risk"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.1",
+    "rich>=13.0",
+]
+
+[project.scripts]
+git-sift = "git_sift.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
