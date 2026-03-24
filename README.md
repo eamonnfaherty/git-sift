@@ -12,18 +12,24 @@ AI-generated code changes can bury high-risk edits — a removed auth check, a b
 
 ---
 
+## Usage without installation
+
+Run directly with [uvx](https://docs.astral.sh/uv/guides/tools/) — no venv needed:
+
+```bash
+uvx git-sift
+```
+
 ## Installation
 
 ```bash
 pip install git-sift
 ```
 
-Or from source:
+Or with uv:
 
 ```bash
-git clone https://github.com/eamonnfaherty/git-compare-tool
-cd git-compare-tool
-pip install -e .
+uv tool install git-sift
 ```
 
 Requires Python 3.11+.
